@@ -61,9 +61,10 @@ input {
 }
 
 .container form .title {
+    display: block;
     font-size: 16px;
     font-weight: 500;
-    /* margin: 60px 0; */
+    margin: 6px 0;
     color: #333;
 }
 
@@ -84,8 +85,26 @@ input {
 .input-field label {
     font-size: 12px;
     font-weight: 500;
+    color: #2e2e2e;
+    margin: 4px 0;
 }
 
 .input-field input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    border-radius: 5px;
     height: 42px;
+    margin: 8px 0;
+    padding: 0 15px;
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.input-field input[type="date"]:valid {
+    color: #333;
 }
