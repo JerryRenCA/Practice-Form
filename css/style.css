@@ -50,6 +50,7 @@ input {
 }
 
 .container form {
+
     min-height: 600px;
     position: relative;
     margin-top: 16px;
@@ -57,7 +58,11 @@ input {
 }
 
 .container .details {
-    /* margin-top: 10px; */
+    margin-top: 30px;
+}
+
+.container .details.ID {
+    margin-top: 10px;
 }
 
 .container form .title {
@@ -71,6 +76,7 @@ input {
 .container form .fields {
     display: flex;
     /* flex-direction: column; */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
